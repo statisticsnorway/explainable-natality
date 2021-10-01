@@ -7,5 +7,7 @@ The Notebook named ´sample-natality-data.ipynb´ is based on [this example](htt
 ### Explaining birth weight predictions
 The Notebook named ´natality-ai-explanations.ipynb´ is based on Google Cloud Platform example notebook for explainable AI. It has been updated to fix some bugs, and it is also changed to accomodate the Natality data rather than the default data google used in the original example notebook. Run this notebook after the ´sampple-natality-data.ipynb´ notebook has created the ´train.csv´ and ´eval.csv´ files which this notebook is dependent on. This notebook is configured to work with a specific GCP project, so if you want to run it yourself you have to go through the cells and change some values.
 
+NB: The training of the neural net is flaky. Sometimes the loss remains contant. We did not have time to debug that part in the duration of the hack.
+
 ### Modified example notebook (bike ride length)
 The Notebook named ´ai-explanations-tabular.ipynb´ is a notebook that is very close to the original [GCP Explainable AI documentation](https://cloud.google.com/ai-platform/prediction/docs/ai-explanations/getting-started) example notebook which is about prediction of the length of bike rides. This version of the notebook has been debugged and updated to function in september 2021, which Googles own example did not.
